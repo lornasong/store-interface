@@ -4,9 +4,9 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class dddTest {
+public class ListStorerTest {
 
-	@Test //write this before each test. method should be name test___()
+	@Test
 	public void test() {
 		fail("Not yet implemented");
 	}
