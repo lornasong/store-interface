@@ -10,6 +10,7 @@ public class SetStorer implements Storer{
 	@Override
 	public boolean add(String s) {
 		return setStore.add(s);
+		//return true;
 	}
 
 	@Override

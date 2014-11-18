@@ -15,6 +15,7 @@ public class ListStorer implements Storer {
 	@Override
 	public boolean delete(String s) {		
 		return listStore.remove(s);
+		//return true;
 	}
-
+	
 }
