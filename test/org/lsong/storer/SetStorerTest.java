@@ -13,6 +13,7 @@ import org.junit.Test;
  */
 public class SetStorerTest {
 
+	//Ok to have duplicate code in testing
 	private SetStorer testSet;
 
 	@Before
@@ -46,9 +47,11 @@ public class SetStorerTest {
 
 	@Test
 	public void testAddDuplicateValues() {
-		testSet.add("duplicate");
+		//Make string a constant
+		String testString = "duplicate";
+		testSet.add(testString);
 		assertFalse("Duplicate strings values should not be added",
-				testSet.add("duplicate"));
+				testSet.add(testString));
 	}
 	
 	@Test

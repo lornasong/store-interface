@@ -3,6 +3,11 @@ package org.lsong.storer;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * Storer that uses the set collection.
+ * @author lornasong
+ *
+ */
 public class SetStorer implements Storer{
 
 	private final Set<String> setStore = new HashSet<String>();

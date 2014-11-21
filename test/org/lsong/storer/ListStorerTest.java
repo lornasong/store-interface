@@ -13,26 +13,36 @@ import org.junit.runners.MethodSorters;
  * 
  * @author lornasong
  */
-@FixMethodOrder(MethodSorters.NAME_ASCENDING)
+
 public class ListStorerTest {
-
-	private ListStorer testList;
-
-	@Before
-	public void initTestClass() {
-		testList = new ListStorer();
-	}
 
 	@Test
 	public void test1DeleteFromEmptyList() {
-		assertFalse("Deleted string from empty list", testList.delete("test"));
+		ListStorer testList = new ListStorer();
+		// NOTE: Can make a new class for this. Run test independently.
+		// feed a lot of values.
+		assertFalse("Should have deleted string from empty list",
+				testList.delete("test"));
+		// put as many asserts as needed
+		// Language of note: what does this mean for this to fail
 	}
 
 	@Test
 	public void test2AddDuplicateValues() {
+		ListStorer testList = new ListStorer();
 		testList.add("duplicate");
 		assertTrue("Prevented adding duplicate valudes",
 				testList.add("duplicate"));
 	}
+
+//	@Test
+//	public void testAdd() {
+//		ListStorer testList = new ListStorer();
+//		String addString = "add";
+//		assertTrue("Should have added string", testList.add(addString));
+//		assertTrue("Should have deleted string", testList.delete(addString));
+//	}
+	
+	
 
 }
