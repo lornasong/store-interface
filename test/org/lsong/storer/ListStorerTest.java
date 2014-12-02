@@ -15,7 +15,12 @@ import org.junit.runners.MethodSorters;
  */
 
 public class ListStorerTest {
-
+//ECL Emma helps with class coverage
+	//You can write methods to specifically increase coverage.
+	//gives idea of what testing
+	//not so much if you are testing well
+	//e.g. all branches of different combinations in an if statement
+	
 	@Test
 	public void test1DeleteFromEmptyList() {
 		ListStorer testList = new ListStorer();
